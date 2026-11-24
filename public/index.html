@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modul Fisika AI — Momentum & Impuls</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="page">
+<header class="hero"><div class="eyebrow">MODUL DIGITAL FISIKA · KEARIFAN LOKAL BATAK TOBA</div><h1>Momentum <span>&</span> Impuls</h1><p>Belajar konsep fisika melalui konteks budaya, didampingi Tutor AI yang membimbing cara berpikirmu.</p><div class="hero-tags"><span>10 soal pilihan ganda</span><span>Modul kontekstual</span><span>Tutor AI</span></div></header>
+<section class="student-card" id="studentCard"><h2>Identitas belajar</h2><p>Masukkan nama dan kelas agar hasil tes dan percakapan tutor dapat disimpan. Hindari menulis informasi pribadi yang sensitif di chat.</p><div class="fields"><label>Nama<input id="studentName" type="text" placeholder="Nama (boleh gunakan kode peserta)" maxlength="100"></label><label>Kelas<input id="studentClass" type="text" placeholder="Contoh: XI IPA 1" maxlength="50"></label></div><button id="unlockBtn" class="primary">Masuk modul <span>→</span></button></section>
+<div id="workspace" hidden>
+<nav class="tabs"><button class="tab active" data-view="learn">Materi & Tutor AI</button><button class="tab" data-view="quiz">Pre-test / Post-test</button></nav>
+<section id="learnView" class="learn-view">
+<div class="lesson-grid">
+<article class="lesson-card"><div class="lesson-number">01 · KONSEP DASAR</div><h2>Momentum</h2><p>Momentum adalah hasil kali massa benda dan kecepatannya. Momentum merupakan besaran vektor yang arahnya sama dengan arah kecepatan.</p><div class="formula">p = m × v</div><small>p: momentum (kg·m/s) · m: massa (kg) · v: kecepatan (m/s)</small></article>
+<article class="lesson-card"><div class="lesson-number">02 · KONSEP DASAR</div><h2>Impuls</h2><p>Impuls merupakan hasil kali gaya rata-rata dengan selang waktu gaya tersebut bekerja.</p><div class="formula">I = F × Δt</div><small>I: impuls (N·s) · F: gaya rata-rata (N) · Δt: waktu (s)</small></article>
+<article class="lesson-card"><div class="lesson-number">03 · HUBUNGAN</div><h2>Teorema Impuls–Momentum</h2><p>Impuls sama dengan perubahan momentum. Untuk perubahan momentum yang sama, waktu lebih lama berarti gaya rata-rata lebih kecil.</p><div class="formula">I = Δp = m(v₂ − v₁)</div></article>
+<article class="lesson-card"><div class="lesson-number">04 · HUKUM</div><h2>Kekekalan Momentum</h2><p>Jika gaya luar total pada sistem diabaikan, momentum total sebelum interaksi sama dengan momentum total sesudah interaksi.</p><div class="formula small-formula">m₁v₁ + m₂v₂ = m₁v₁′ + m₂v₂′</div></article>
+</div>
+<div class="culture-card"><div class="culture-label">FISIKA DALAM KEARIFAN LOKAL</div><h2>Martonun ulos & pembuatan tipa-tipa</h2><p><b>Martonun ulos:</b> hentakan alat tenun untuk merapatkan benang dapat menjadi konteks membahas gaya, selang waktu, dan impuls.</p><p><b>Tipa-tipa:</b> alu yang bergerak lalu menumbuk padi mengalami perubahan momentum karena gaya tumbukan. Besar gaya rata-rata berkaitan dengan perubahan momentum dan lama tumbukan.</p><p class="note">Konteks budaya dan istilah tradisi perlu diperiksa/ditetapkan oleh ahli budaya sebelum digunakan sebagai materi penelitian.</p></div>
+<section class="tutor-card"><div class="tutor-header"><div class="bot-avatar">AI</div><div><h2>Tutor AI Fisika</h2><p>Belajar dengan pertanyaan pemantik dan petunjuk bertahap</p></div><span class="online-dot">● Siap</span></div><div class="tutor-rules"><b>Peran Tutor:</b> membantu memahami, bukan langsung memberikan jawaban akhir. Tutor berfokus pada momentum, impuls, tumbukan, dan konteks budaya pada modul.</div><div id="chatMessages" class="chat-messages"><div class="message assistant"><b>Tutor AI</b><p>Halo! Kita belajar momentum dan impuls bersama. Kamu bisa bertanya tentang rumus, contoh perhitungan, atau menghubungkan konsep dengan martonun ulos dan pembuatan tipa-tipa. Apa yang ingin kamu pahami lebih dulu?</p></div></div><div class="chat-input-row"><textarea id="chatInput" rows="2" maxlength="1000" placeholder="Tulis pertanyaan fisika di sini..."></textarea><button id="sendChat" class="primary send-button">Kirim</button></div><div class="chat-footnote">Jawaban AI dapat keliru. Gunakan sebagai pendamping belajar, bukan pengganti penjelasan guru.</div></section>
+</section>
+<section id="quizView" class="quiz-area" hidden><div class="test-intro"><h2>Latihan pemahaman</h2><p>Pre-test digunakan untuk mengukur pemahaman awal. Post-test untuk mengukur pemahaman setelah belajar. Tutor AI tidak tersedia saat tes berlangsung.</p><div class="test-switch"><button class="test-choice selected" data-test="pre-test">Mulai Pre-test</button><button class="test-choice" data-test="post-test">Mulai Post-test</button></div><p id="testNotice" class="test-notice">Mode Pre-test: kerjakan mandiri tanpa bantuan tutor.</p></div><div id="questionList"></div><div class="submit-row"><button id="submitBtn" class="primary">Kirim jawaban & lihat nilai →</button><p>Soal yang belum dijawab akan ditandai sebelum pengiriman.</p></div></section>
+<section id="result" class="result" hidden></section>
+</div>
+<footer>Modul digital fisika · Momentum dan Impuls · Batak Toba</footer>
+</div><script src="assets/app.js"></script>
+</body></html>
